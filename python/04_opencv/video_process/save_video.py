@@ -12,7 +12,7 @@ out= cv2.VideoWriter('output.mov',fourcc,20.0,(width,height))
 while(cap.isOpened()):
 	ret, frame=cap.read()
 	if ret == True:
-		#frame=cv2.flip(frame,0)
+		frame=cv2.flip(frame,0)
 		out.write(frame)
 
 		cv2.imshow('frame',frame)
