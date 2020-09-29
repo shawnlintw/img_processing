@@ -17,7 +17,7 @@ if __name__ =="__main__":
 		image = cv2.imread(sys.argv[1], cv2.IMREAD_GRAYSCALE)
 	else:
 		print("Usage: python3 main.py imageFile")
-	
+		exit()
 	grayHist = calcGrayHist(image)
 	
 	x_range = range(256)
